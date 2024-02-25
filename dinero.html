@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3343839861252848"
+     crossorigin="anonymous"></script>
+
+    <title>Ganar Dinero</title>
+    <!-- Inserta aquí tus etiquetas meta para SEO y otras configuraciones -->
+    <!-- Inserta aquí tus enlaces a archivos CSS -->
+    <!-- Inserta aquí tus scripts para la integración de publicidad (por ejemplo, Google AdSense) -->
+<style>
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+/* Establece el color de letra blanco para toda la página */
+body {
+    color: white;
+}
+
+/* Ajusta el peso de la fuente para que sea más relleno */
+body {
+    font-weight: bold;
+
+    }
+.title {
+            font-size: 48px;
+            animation: changeColor 2s linear infinite;
+        }
+
+        @keyframes changeColor {
+            0% {
+                color: #9b30ff; /* Púrpura claro */
+            }
+            50% {
+                color: #800080; /* Púrpura oscuro */
+            }
+            100% {
+                color: #9b30ff; /* Vuelve al púrpura claro */
+            }
+        }
+        
+
+body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #dabfff, #4b0082); /* Fondo degradado verde claro a verde oscuro */
+            min-height: 100vh; /* Establece la altura mínima del cuerpo igual a la altura de la ventana gráfica */
+            transition: background-color 0.5s ease; /* Transición suave del color de fondo */
+        }
+
+        .scrollbar button {
+             font-family: Helvetica, sans-serif;
+             color: white;
+             font-weight: bold;
+            width: 150px; /* Ancho del botón */
+            height: 40px; /* Alto del botón */
+            margin: 5px; /* Margen entre los botones */
+            font-size: 16px; /* Tamaño de fuente del texto del botón */
+            cursor: pointer;
+            background-color: #9b30ff; 
+            border-radius: 20px;
+            transition: background-color 0.3s ease;
+            transition: transform 0.3s ease; /* Transición suave del tamaño */
+        }
+        button:hover {
+            background-color: #4b0082; 
+            transform: scale(1.1); 
+        }
+         #points-counter {
+            font-size: 17px;
+            margin-left: 10px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        #points {
+            padding: 11px 15px;
+            border: 2px solid #ccc;
+            border-radius: 33px;
+            background-color: #4b0082;
+        }
+            .special-button {
+             font-family: Helvetica, sans-serif;
+             color: white;
+             font-weight: bold;
+            width: 300px; /* Ancho del botón */
+            height: 40px; /* Alto del botón */
+            margin: 5px; /* Margen entre los botones */
+            font-size: 16px; /* Tamaño de fuente del texto del botón */
+            cursor: pointer;
+            background-color: #9b30ff; 
+            border-radius: 20px;
+            transition: background-color 0.3s ease;
+            transition: transform 0.3s ease; /* Transición suave del tamaño */
+        }
+
+        special-button:hover {
+            background-color: #4b0082; 
+            transform: scale(1.1); 
+        
+ 
+
+
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+    <center><h1 class="title">Gana Dinero con Nuestra Página</h1>
+    <div class="scrollbar">
+        <button onclick="mostrarAnuncio()">Anuncio</button>
+        <button onclick="metodoRetiro()">Método de Retiro</button>
+        <button onclick="ingresar()">Ingresar</button>
+        <button onclick="inscribirse()">Inscribirse</button>
+        <div id="points-counter"> <span id="points">Puntos:0</span></div>
+    </div>
+        <button id="startButton" class="special-button">Iniciar Reproducción de Anuncios</button>
+<button id="stopButton" class="special-button" style="display: none;">Detener Reproducción de Anuncios</button>
+    
+         
+         </center>
+    </div>
+    <!-- Inserta aquí tus códigos de integración de publicidad -->
+    <!-- Por ejemplo, código de Google AdSense -->
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+    <!-- <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins> -->
+    <!-- <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> -->
+</div>
+
+<script>
+    function mostrarAnuncio() {
+        // Aquí puedes agregar el código para mostrar anuncios o redirigir a una página de anuncios
+        alert("¡Mira este anuncio!");
+    }
+
+    function metodoRetiro() {
+        // Aquí puedes agregar el código para mostrar información sobre métodos de retiro de dinero
+        alert("Selecciona tu método de retiro preferido.");
+    }
+
+    function ingresar() {
+        // Aquí puedes agregar el código para permitir que los usuarios ingresen a su cuenta
+        alert("Ingresa a tu cuenta para comenzar a ganar dinero.");
+    }
+
+    function inscribirse() {
+        // Aquí puedes agregar el código para permitir que los usuarios se inscriban en tu plataforma
+        alert("¡Inscríbete ahora y comienza a ganar dinero!");
+    }
+    // Incrementa el contador de puntos
+    var points = parseInt(localStorage.getItem('points')) || 0;
+    points++;
+    localStorage.setItem('points', points);
+    // Función para iniciar la reproducción de anuncios
+function iniciarReproduccion() {
+    document.getElementById("startButton").style.display = "none"; // Oculta el botón de inicio
+    document.getElementById("stopButton").style.display = "inline";
+     (adsbygoogle = window.adsbygoogle || []).push({});
+
+}
+
+// Función para detener la reproducción de anuncios
+function detenerReproduccion() {
+    document.getElementById("startButton").style.display = "inline"; // Muestra el botón de inicio
+    document.getElementById("stopButton").style.display = "none"; // Oculta el botón de detener
+    // Aquí puedes agregar el código para detener la reproducción de anuncios
+    // Por ejemplo, puedes detener la reproducción de los anuncios
+}
+
+// Agrega un event listener al botón de inicio para iniciar la reproducción de anuncios
+document.getElementById("startButton").addEventListener("click", iniciarReproduccion);
+
+// Agrega un event listener al botón de detener para detener la reproducción de anuncios
+document.getElementById("stopButton").addEventListener("click", detenerReproduccion);
+</script>
+
+<!-- Inserta aquí tus enlaces a archivos JavaScript -->
+
+</body>
+</html>
